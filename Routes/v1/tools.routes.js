@@ -38,6 +38,8 @@ router.route("/")
 
 
 
-router.route('/:id').get(toolsController.getDetail)
+router.route('/:id')
+.get(toolsController.getDetail)
+.patch(toolsController.updateDetail)
 
 module.exports=router
